@@ -15,7 +15,7 @@ var myfriends = [
     name: "Bender",
     photo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Bender_Rodriguez.png/220px-Bender_Rodriguez.png",
-    scores: [],
+    scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
   },
   {
     name: "Morbo",
