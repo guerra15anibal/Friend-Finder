@@ -1,2 +1,2 @@
 # Friend-Finder
-![](images/)
+![](images/home.png)
