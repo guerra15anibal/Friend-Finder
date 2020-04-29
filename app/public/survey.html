@@ -10,6 +10,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="https://cdn.imgbin.com/24/5/24/imgbin-friend-zone-logo-meme-symbol-feeling-friendzone-UajTNhL926AyY1QktSMeLkVmZ.jpg"/>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
@@ -28,7 +29,7 @@
       <h3><strong>About You</strong></h3>
       <form>
         <div class="form-group">
-          <label for="Name">Name (REQUIRED)</label>
+          <label for="yourName">Name (REQUIRED)</label>
           <input
             type="text"
             class="form-control"
@@ -46,7 +47,7 @@
           <input
             type="file"
             class="custom-file-input"
-            id="validatedCustomFile"
+            id="formImg"
             required
           />
           <label class="custom-file-label" for="validatedCustomFile"
@@ -59,8 +60,8 @@
         <hr />
       </form>
       <h3><strong>Question 1</strong></h3>
-      <h4>Do you have ten toes? (Sometimes this is a deal breaker)</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <h4>Should sewer people live above ground?</h4>
+      <select class="custom-select custom-select-lg mb-3" id=q1>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -69,8 +70,8 @@
       </select>
 
       <h3><strong>Question 2</strong></h3>
-      <h4>Do you believe Bender is great?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <h4>Is humans dating robots wrong?</h4>
+      <select class="custom-select custom-select-lg mb-3" id=q2>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -79,8 +80,8 @@
       </select>
 
       <h3><strong>Question 3</strong></h3>
-      <h4>How do you feel like there is other life forms?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <h4>How do you feel like you could connect with other life forms?</h4>
+      <select class="custom-select custom-select-lg mb-3" id=q3>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -89,8 +90,8 @@
       </select>
 
       <h3><strong>Question 4</strong></h3>
-      <h4>Do you think the future will be any good?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <h4>Will the future be great in the year 3000?</h4>
+      <select class="custom-select custom-select-lg mb-3" id=q4>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -99,8 +100,8 @@
       </select>
 
       <h3><strong>Question 5</strong></h3>
-      <h4>Is online dating the an effective way to meet?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <h4>Do you think Bender is great?</h4>
+      <select class="custom-select custom-select-lg mb-3" id=q5>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -109,8 +110,8 @@
       </select>
 
       <h3><strong>Question 6</strong></h3>
-      <h4>Do you think you will find the perfect match here?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <h4>Is Slurm the best drink out there?</h4>
+      <select class="custom-select custom-select-lg mb-3" id=q6>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -119,8 +120,8 @@
       </select>
 
       <h3><strong>Question 7</strong></h3>
-      <h4>Did you lie on the question 6?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <h4>Is limbo a sport?</h4>
+      <select class="custom-select custom-select-lg mb-3" id=q7>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -130,7 +131,7 @@
 
       <h3><strong>Question 8</strong></h3>
       <h4>Is honest a good trait to have?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <select class="custom-select custom-select-lg mb-3" id=q8>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -140,7 +141,7 @@
 
       <h3><strong>Question 9</strong></h3>
       <h4>Do you take great risks in life?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <select class="custom-select custom-select-lg mb-3" id=q9>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -149,8 +150,8 @@
       </select>
 
       <h3><strong>Question 10</strong></h3>
-      <h4>Do you think the colors purple and orange mix?</h4>
-      <select class="custom-select custom-select-lg mb-3">
+      <h4>Is one eye better the two?</h4>
+      <select class="custom-select custom-select-lg mb-3" id=q10>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2 (Somewhat Disagree)</option>
         <option value="3">3 (Meh)</option>
@@ -158,11 +159,129 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <br><br>
-    <button type="button" id="surveySubmit" class="btn btn-primary btn-lg btn-block">Submit</button>
+      <button type="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
 </div>
 <br>
     <div class="container">
         <footer><a href="/api/friends" style="color:white;">API Friends List  </a>|<a href="https://github.com/guerra15anibal/Friend-Finder" style="color:white;">  GitHub Repo</a></p></footer>
     </div>
+    <div id="resultsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" >
+
+        <div class="modal-content">
+
+          <div class="modal-header" style="background-color: cornflowerblue;">
+            <h2 class="modal-title" style="background-color: cornflowerblue;"><strong>Hi Friend!</strong></h2>
+          </div>
+
+          <div class="modal-body" style="background-color: cornflowerblue;">
+            <h2 id="matchName"></h2>
+            <img id="matchImg" src="" alt="Image Not Found" style="max-width: 350px;">
+          </div>
+
+          <div class="modal-footer" style="background-color: cornflowerblue;">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+
+      var completed;
+
+      $(document).ready(function() {
+
+        // Event Listener for Submission
+        $('#submit').on('click', function() {
+          console.log("button working")
+          checkIfComplete(function(){
+            if(completed){
+              collectInputs();
+            }
+            else{
+              alert('Complete form please');
+            }
+
+          });
+
+        });
+
+      });
+
+
+      function checkIfComplete(callback){
+
+        var questionsCompleted;
+        $('.custom-select').each(function(){
+          if ( $(this).val() == "" ){
+            questionsCompleted = false;
+          }
+        })
+
+        .promise().done(function(){
+
+          if(questionsCompleted == false){
+            completed = false;
+          }
+
+          else if( $('#yourName').val() == "" ){
+            completed = false;
+          }
+
+          else if( $('#formImg').val()  == "" ){
+            completed = false;
+          }
+
+          else{
+            completed = true;
+          }
+
+          callback();       
+
+        });
+      }
+
+
+      function collectInputs(){
+
+        var newPeep = {
+          name: $('#yourName').val(),
+          photo: $('#formImg').val(),
+          scores: []
+        };
+
+        var score = [];
+        $('.custom-select').each(function(){
+          score.push( parseInt( $(this).val() ) );
+        })
+        .promise().done(function(){
+          
+          newPeep.scores = score;
+
+          var currentURL = window.location.origin;
+          $.post(currentURL + "/api/friends", newPeep, function(data){
+
+            $('#matchName').text(data.name);
+            $('#matchImg').attr('src', data.photo);
+
+            $("#resultsModal").modal('toggle');
+
+          });
+
+        });
+
+      }
+
+    </script>
+  
   </body>
 </html>
